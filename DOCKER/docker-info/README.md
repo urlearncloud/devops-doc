@@ -7,7 +7,7 @@
 5. docker eco-systems
 
 
-# container
+### container
 
 
 Containerization refers to a technology that allows applications and their dependencies to be packaged together into containers.
@@ -29,9 +29,16 @@ A container is a standard unit of software that packages up code and all its dep
 ### Docker
 
 
-A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
-Docker is a containerization platform that provides easy way to containerize your applications, which means, using Docker you can build container images, run the images to create containers and also push these containers to container regestries such as DockerHub, Quay.io and so on.
+Docker is an open-source containerization platform used for automating the process of building, shipping, and running applications inside containers.
+
+Docker, Inc. was founded in 2010 by Solomon Hykes as a company originally known as dotCloud, a Platform-as-a-Service (PaaS) provider. However, Docker itself, the technology, was released to the public in March 2013.
+
+Docker simplifies the development process by allowing developers to easily package and deploy applications with all their dependencies.
+
+Docker is integrated into major cloud providers like AWS, Google Cloud, and Microsoft Azure, which support running Docker containers in scalable cloud environments.
+
+Docker remains at the core of the cloud-native ecosystem, with widespread use in continuous integration and continuous delivery (CI/CD) pipelines, microservices architectures, and cloud computing environments.
 
 In simple words, you can understand as `containerization is a concept or technology` and `Docker Implements Containerization`.
 
