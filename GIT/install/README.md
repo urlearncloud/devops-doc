@@ -1,5 +1,5 @@
 ## GIT INSTALL , INITIALIZATION , USER DETAILS ON LINUX
-======================================================
+-----------------------------------------------------------------
 
 sudo su
 
@@ -22,7 +22,7 @@ git config --list
 
 
 ## GIT INSTALL , INITIALIZATION , USER DETAILS ON UBUNTU 
-======================================================
+-----------------------------------------------------------------
 
 sudo su
 
@@ -47,7 +47,7 @@ git config --list
 
 
 ## GIT INSTALL , INITIALIZATION , USER DETAILS ON WINDOWS
-======================================================
+-----------------------------------------------------------------
 
 
 Go to the official Git website: `https://git-scm.com`  & Download-Install the latest version of Git for Windows.
