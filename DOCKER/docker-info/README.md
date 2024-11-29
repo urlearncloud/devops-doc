@@ -51,6 +51,92 @@ In simple words, you can understand as `containerization is a concept or technol
 The above picture, clearly indicates that Docker Deamon is brain of Docker. If Docker Deamon is killed, stops working.
 
 
+Docker Architecture is based on a client-server model that includes several key components working together to create, run, and manage containers.
+
+#### Key Components of Docker Architecture :-
+
+1. Docker Client (CLI)
+2. Docker Daemon (Server)
+3. Docker Images
+4. Docker Containers
+5. Docker Registry
+6. Docker Network
+7. Docker Volumes
+
+
+
+
+1. Docker Client (CLI)
+The Docker client is the primary interface for interacting with Docker. It allows users to issue commands to Docker to create, manage, and run containers.
+The client can be run from a terminal or command line and communicates with the Docker daemon (server) to carry out actions.
+Examples of commands you can run with the Docker client:
+docker run — to create and run a container from an image.
+docker build — to build an image from a Dockerfile.
+docker ps — to list running containers.
+docker stop — to stop a running container.
+The client communicates with the Docker daemon using a REST API, typically over a Unix socket (on Linux) or via a network connection (on remote servers).
+
+2. Docker Daemon (Server)
+The Docker daemon (dockerd) is a background process that manages Docker containers, images, networks, and volumes. It is the heart of Docker’s operation.
+It listens for requests from the Docker client and responds by performing actions such as starting/stopping containers, building images, and managing containers' lifecycle.
+The daemon is responsible for:
+Building Docker images.
+Running containers.
+Managing container orchestration.
+Managing the overall Docker system, including resources, networks, and storage.
+The Docker daemon can be run on a local machine or on a remote server. The Docker client communicates with the daemon using a REST API, either locally or over a network connection.
+
+3. Docker Images
+A Docker image is a lightweight, read-only template used to create containers. It includes everything needed to run an application: code, libraries, environment variables, configurations, and dependencies.
+Docker images are built from Dockerfiles, which define a series of steps to assemble an image.
+Images are usually versioned and stored in a Docker registry (like Docker Hub or a private registry). They are referenced by a unique image ID and tag (e.g., nginx:latest).
+4. Docker Containers
+A container is a running instance of a Docker image. It is an isolated, lightweight environment where applications run.
+Containers share the host operating system’s kernel, making them more resource-efficient than traditional virtual machines, but they are fully isolated from each other.
+Containers have a filesystem that is layered on top of the image’s read-only layers. Each container gets its own writable layer, which makes it possible for containers to run independently while using a shared base image.
+When a container is started, it is allocated a unique ID and its own networking environment. Changes made to a container’s filesystem are stored in its writable layer. When the container is stopped, the changes (unless specifically persisted) are discarded.
+5. Docker Registry
+A Docker registry is a storage and distribution system for Docker images. It allows you to upload and download images, share them with others, or store them for your own use.
+Docker Hub is the default, public registry, but you can also set up private registries or use others like Amazon ECR (Elastic Container Registry) or Google Container Registry.
+The Docker client pulls images from the registry and pushes local images to it.
+Docker’s registry system has the following components:
+
+Docker Hub: Public registry where users can share and access container images.
+Private Registry: A privately hosted registry for organizations to store and distribute images internally.
+Registry API: The interface for Docker clients and the daemon to interact with registries.
+6. Docker Networking
+Docker provides different networking options to allow containers to communicate with each other and with the external world.
+Network types in Docker:
+Bridge Network: The default network driver used when no other driver is specified. Containers on a bridge network can communicate with each other using their internal IP addresses.
+Host Network: Containers use the host’s network stack. This is useful when containers need to have direct access to the host network.
+Overlay Network: Used when containers are deployed across multiple Docker hosts. It is commonly used in Docker Swarm and Kubernetes environments.
+Macvlan Network: Allows containers to have their own MAC address, making them appear as physical devices on the network.
+None Network: Containers are not connected to any network.
+7. Docker Volumes
+Docker volumes are used to persist data generated or used by containers. By default, when a container is removed, any data stored within the container is lost, but volumes are external to containers and can be reused across container restarts or removals.
+Volumes are managed by Docker and are stored in a part of the host filesystem managed by Docker (typically under /var/lib/docker/volumes on Linux).
+Types of volumes:
+Named Volumes: Explicitly created volumes with names that can be shared across containers.
+Anonymous Volumes: Volumes created automatically by Docker when no volume name is provided.
+High-Level Overview of Docker Architecture:
+At a high level, the Docker architecture is composed of the following layers:
+
+Docker Client (CLI): The user-facing interface that interacts with the Docker Daemon.
+Docker Daemon (Server): The background process that manages containers and other Docker services.
+Docker Images: Read-only templates that are used to create containers.
+Docker Containers: Running instances of images, isolated environments for running applications.
+Docker Registry: Repositories for storing and distributing Docker images.
+Docker Networking: Facilitates communication between containers and with external systems.
+Docker Volumes: Persistent storage used by containers.
+How It All Works Together:
+Building an Image: The Docker client sends a build request to the Docker daemon to build an image from a Dockerfile.
+Running a Container: Once the image is built, the client sends a command to the Docker daemon to create and run a container from that image.
+Interacting with the Container: The user can interact with the container through the client, such as executing commands inside the container or stopping it.
+Networking and Storage: If needed, the container is connected to a network, and data can be stored using volumes.
+Accessing Images from Registry: If an image is needed, the Docker daemon pulls it from a Docker registry like Docker Hub.
+Orchestrating with Tools: In complex environments, Docker Swarm or Kubernetes can be used for orchestration to manage containers across multiple hosts.
+
+
 ### Install
 
 Follow installation guide
