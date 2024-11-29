@@ -4,7 +4,8 @@
 2. docker
 3. install
 4. docker architectures
-5. docker eco-systems
+5. docker compose
+6. docker swarm
 
 
 ### container
