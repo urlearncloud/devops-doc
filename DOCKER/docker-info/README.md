@@ -12,17 +12,16 @@
 
 Containerization refers to a technology that allows applications and their dependencies to be packaged together into containers.
 
-These containers are lightweight, portable, and isolated environments that can run consistently across different computing environments, whether it's a developer's laptop, a test server, or a production system. 
+Containers are lightweight, portable, and isolated environments that can run consistently across different computing environments, whether it's a developer's laptop, a test server, or a production system. 
 
-This helps address the common issue of "it works on my machine" by ensuring that an application behaves the same way regardless of where it is run.
+Containers helps address the common issue of "it works on my machine" by ensuring that an application behaves the same way regardless of where it is run.
 
 Containers are isolated environments that encapsulate an application and everything it needs to run: libraries, dependencies, binaries, configuration files, etc.
 
 Unlike traditional virtual machines (VMs), containers do not require an entire operating system. Instead, they share the host OS's kernel, making them more lightweight and efficient.
 
-A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. 
+A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another and required to run your application with the minimum system dependencies.
 
-A container is a bundle of Application, Application libraries required to run your application and the minimum system dependencies.
 
 
 
