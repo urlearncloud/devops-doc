@@ -50,6 +50,11 @@ In simple words, you can understand as `containerization is a concept or technol
 
 The above picture, clearly indicates that Docker Deamon is brain of Docker. If Docker Deamon is killed, stops working.
 
+
+### Install
+
+Follow installation guide
+
 ### Docker LifeCycle 
 
 We can use the above Image as reference to understand the lifecycle of Docker.
