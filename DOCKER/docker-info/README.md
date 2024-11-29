@@ -18,19 +18,19 @@ This helps address the common issue of "it works on my machine" by ensuring that
 
 Containers are isolated environments that encapsulate an application and everything it needs to run: libraries, dependencies, binaries, configuration files, etc.
 
-Unlike traditional virtual machines (VMs), containers do not require an entire operating system. 
-
-Instead, they share the host OS's kernel, making them more lightweight and efficient.
+Unlike traditional virtual machines (VMs), containers do not require an entire operating system. Instead, they share the host OS's kernel, making them more lightweight and efficient.
 
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. 
 
 A container is a bundle of Application, Application libraries required to run your application and the minimum system dependencies.
 
+
+
+
+### Docker
+
+
 A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
-
-
-
-### What is Docker ?
 
 Docker is a containerization platform that provides easy way to containerize your applications, which means, using Docker you can build container images, run the images to create containers and also push these containers to container regestries such as DockerHub, Quay.io and so on.
 
