@@ -13,8 +13,8 @@ git init
 
 
 ```sh
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+git config --global user.name "dev"
+git config --global user.email "dev@gmail.com"
 git config --list 
 ```
 
@@ -36,8 +36,8 @@ git init
 
 
 ```sh
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+git config --global user.name "dev"
+git config --global user.email "dev@gmail.com"
 git config --list 
 ```
 
@@ -59,8 +59,8 @@ git init
 
 
 ```sh
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+git config --global user.name "dev"
+git config --global user.email "dev@gmail.com"
 git config --list 
 ```
 
