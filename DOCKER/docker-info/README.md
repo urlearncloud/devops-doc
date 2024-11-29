@@ -9,26 +9,25 @@
 
 # container
 
+
+Containerization refers to a technology that allows applications and their dependencies to be packaged together into containers.
+
+These containers are lightweight, portable, and isolated environments that can run consistently across different computing environments, whether it's a developer's laptop, a test server, or a production system. 
+
+This helps address the common issue of "it works on my machine" by ensuring that an application behaves the same way regardless of where it is run.
+
+Containers are isolated environments that encapsulate an application and everything it needs to run: libraries, dependencies, binaries, configuration files, etc.
+
+Unlike traditional virtual machines (VMs), containers do not require an entire operating system. 
+
+Instead, they share the host OS's kernel, making them more lightweight and efficient.
+
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. 
 
 A container is a bundle of Application, Application libraries required to run your application and the minimum system dependencies.
 
 A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
-Containers are lightweight because they use a technology called containerization, which allows them to share the host operating system's kernel and libraries. 
-
-This results in a smaller footprint compared to traditional virtual machines, as the containers do not need to include a full operating system. 
-
-Additionally, Docker containers are designed to be minimal, only including what is necessary for the application to run, further reducing their size.
-
-Let's try to understand this with an example:
-
-Below is the screenshot of official ubuntu base image which you can use for your container. It's just ~ 22 MB, isn't it very small ? on a contrary if you look at official ubuntu VM image it will be close to ~ 2.3 GB. So the container base image is almost 100 times less than VM image.
-
-![217493284-85411ae0-b283-4475-9729-6b082e35fc7d](https://github.com/itscloudevops/docker/assets/172890207/67abb1d6-c6d1-4614-9c53-6984e0815aab)
-
-
-To provide a better picture of files and folders that containers base images have and files and folders that containers use from host operating system (not 100 percent accurate -> varies from base image to base image). Refer below.
 
 
 ### What is Docker ?
