@@ -95,22 +95,6 @@ You might create your own images or you might only use those created by others a
 
 
 
-## INSTALL DOCKER
-
-A very detailed instructions to install Docker are provide in the below link
-
-https://docs.docker.com/get-docker/
-
-For Demo, 
-
-You can create an Ubuntu EC2 Instance on AWS and run the below commands to install docker.
-
-```
-sudo apt update
-sudo apt install docker.io -y
-```
-
-
 ### Start Docker and Grant Access
 
 A very common mistake that many beginners do is, After they install docker using the sudo access, they miss the step to Start the Docker daemon and grant acess to the user they want to use to interact with docker and run docker commands.
