@@ -66,7 +66,7 @@ Docker Architecture is based on a client-server model that includes several key 
 
 
 
-~1. Docker Client (CLI)`
+`1. Docker Client (CLI)`
 
 
 The Docker client is the primary interface for interacting with Docker. It allows users to issue commands to Docker to create, manage, and run containers.
