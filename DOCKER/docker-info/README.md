@@ -7,7 +7,7 @@
 5. docker eco-systems
 
 
-# What is a container ?
+# container
 
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. 
 
@@ -15,11 +15,7 @@ A container is a bundle of Application, Application libraries required to run yo
 
 A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
-![217262726-7cabcb5b-074d-45cc-950e-84f7119e7162](https://github.com/itscloudevops/docker/assets/172890207/9f521d2c-4ec3-459c-bc02-64f91cb68915)
-
-## Why are containers light weight ?
-
-Containers are lightweight because they use a technology called containerization, which allows them to share the host operating system's kernel and libraries, while still providing isolation for the application and its dependencies. 
+Containers are lightweight because they use a technology called containerization, which allows them to share the host operating system's kernel and libraries. 
 
 This results in a smaller footprint compared to traditional virtual machines, as the containers do not need to include a full operating system. 
 
