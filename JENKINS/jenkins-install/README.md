@@ -39,13 +39,18 @@ sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
 echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
-
 sudo apt-get update
 sudo apt-get install jenkins -y
-jenkins --version
+```
+
+
+
+```
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
 ```
+
+
 
 **Note: ** By default, Jenkins will not be accessible to the external world due to the inbound traffic restriction by AWS. Open port 8080 in the inbound traffic rules as show below.
 
