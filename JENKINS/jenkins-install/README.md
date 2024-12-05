@@ -5,7 +5,7 @@
  - AWS Account
  - Java (JDK)
 
-## 1. Launch AWS EC2 Instance
+## Launch AWS EC2 Instance
 
 - Go to AWS Console
 - Instances(running) :- ubuntu-22 or other
@@ -31,7 +31,8 @@ java -version
 ```
 
 Now, you can proceed with installing Jenkins
-## YOU CAN FOLLOW : https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
+
+### YOU CAN FOLLOW : https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
 
 ```
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
