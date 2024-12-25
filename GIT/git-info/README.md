@@ -1,7 +1,6 @@
 ## Git services :-
 
-1. vcs
-2. git
-3. install
-4. git lifecycles
-5. common git commands
+1. vcs & git
+2. install
+3. git lifecycles
+4. common git commands
