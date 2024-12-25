@@ -80,3 +80,31 @@ Examples: Git, Mercurial.
 Advantages : Full history on each local machine, supports offline work, faster due to local repositories.
 
 Disadvantages : Can lead to redundant storage of data, more complex to manage and set up compared to CVCS
+
+
+
+## Git
+
+Git is a distributed version control system created by Linus Torvalds in 2005 for managing the development of the Linux kernel. 
+
+It is one of the most popular VCS tools due to its powerful features, flexibility, and speed. 
+
+Git allows multiple people to collaborate on a project, manage large codebases efficiently, and handle changes with ease.
+
+Some key features of Git include :
+
+#### Local repositories :- 
+
+Every user has a full local copy of the repository, making Git fast and reliable even when offline.
+
+#### Branching and Merging :- 
+
+Git allows you to easily create branches (separate lines of development) and later merge them, helping with experimentation and collaboration.
+
+#### Commit history :-
+
+Git stores a history of all commits (changes), making it easy to revert to earlier versions or view the evolution of a project.
+
+#### Distributed model :- 
+
+Every user can work independently on their copy, with changes later synchronized (pushed/pulled) to a shared repository (often hosted on services like GitHub, GitLab, or Bitbucket).
