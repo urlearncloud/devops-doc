@@ -108,3 +108,105 @@ Git stores a history of all commits (changes), making it easy to revert to earli
 #### Distributed model :- 
 
 Every user can work independently on their copy, with changes later synchronized (pushed/pulled) to a shared repository (often hosted on services like GitHub, GitLab, or Bitbucket).
+
+
+
+## Git Life cycle
+
+
+Git tracks changes through a series of steps, and understanding this workflow is essential for mastering version control with Git.
+
+Here's a detailed breakdown of the Git lifecycle :
+
+#### 1. Working Directory (Untracked or Modified)
+
+This is where you start with your files on your local machine. 
+
+When you first create or clone a repository, you have a working directory where all of your project files reside.
+
+Untracked Files : Files that are present in your working directory but are not yet being tracked by Git. These are files that have not been added to the Git repository.
+
+Modified Files : These are files that are already being tracked by Git but have been changed since the last commit. Git recognizes these as modified, but they are not yet saved (committed) to the repository.
+
+Example :-
+
+You create a new file, index.html. This file is untracked by Git.
+
+You edit an existing file, style.css. This file is modified because it already exists in the repository.
+
+#### 2. Staging Area (Index)
+
+The staging area (also called the index) is a temporary storage area where changes are prepared before being committed to the repository. 
+
+When you decide you want to track changes and commit them, you add those changes to the staging area.
+
+Add Changes to Stage : The command  `git add <file>` adds a file to the staging area, marking it as ready for the next commit.
+
+Review Changes : You can use  `git status`  to see which files are staged, modified, or untracked.
+
+Example :-
+
+You modify style.css and script.js. To prepare these changes for the next commit, you run :
+
+`git add style.css script.js`
+
+These files are now in the staging area.
+
+#### 3. Committed (Local Repository)
+
+Once your changes are staged, you can commit them to the local repository. 
+
+A commit is a snapshot of your project at a particular point in time, including the staged changes.
+
+Commit Command : The command  `git commit -m "Commit message"`  commits your staged changes to the repository.
+
+Commit History : Each commit has a unique identifier (SHA hash) and contains a message that describes the changes made. This allows you to track the project’s history.
+
+Each commit includes :-
+
+    A commit message explaining the changes.
+    
+    A snapshot of the project at the time of the commit.
+    
+    Metadata like the author and timestamp.
+    
+Example :-
+
+You commit your changes to style.css and script.js
+
+git commit -m "Fix styling and update JS logic"  ( This commit is saved to your local repository)
+
+
+#### 4. Remote Repository
+
+Once the changes are committed locally, you can push them to a remote repository. 
+
+A remote repository is typically hosted on a service like GitHub, GitLab, or Bitbucket.
+
+Pushing your commits ensures that other collaborators can see your changes and that the history of the project is updated.
+
+Push Changes : The command  `git push origin <branch>`  uploads your commits to a remote repository.
+
+The remote branch (often called origin) is the version of the repository hosted online.
+
+Example :-
+
+After committing locally, you push the changes to the remote main branch
+
+git push origin master  ( Now, the changes are visible in the remote repository)
+
+#### 5. Pull (Fetching Changes)
+
+To keep your local repository up to date with the remote repository, you use the git pull command. 
+
+This fetches any changes made by others and automatically merges them into your current branch.
+
+Pull Command : The command  `git pull origin <branch>`  downloads and merges changes from the remote repository.
+
+Git automatically performs a merge or rebase depending on the configuration.
+
+Example :-
+
+Before starting new work, you pull the latest changes from the remote main branch
+
+git pull origin master  ( This ensures your local repository has the most recent updates before you start making new changes)
