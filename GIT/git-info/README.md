@@ -210,3 +210,116 @@ Example :-
 Before starting new work, you pull the latest changes from the remote main branch
 
 git pull origin master  ( This ensures your local repository has the most recent updates before you start making new changes)
+
+
+
+
+## Git Branching
+
+Branching allows you to diverge from the main line of development and isolate work into separate "branches".
+
+This is useful for working on new features, bug fixes, or experimental changes without affecting the main codebase (usually the main or master branch).
+
+#### Key Branching Commands :-
+
+`Create a new branch`
+
+git branch <branch-name>
+
+
+`Switch to a branch`
+
+git checkout <branch-name>
+
+or
+
+git switch <branch-name>
+
+`Create and switch to a new branch in one step`
+
+git checkout -b <branch-name>
+
+or
+
+git switch -c <branch-name>
+
+`List all branches`
+
+git branch
+
+This shows all local branches. The branch you are currently on will be marked with an asterisk (*).
+
+`Delete a branch`
+
+git branch -d <branch-name>
+
+#### Example of Creating and Switching Branches
+
+To create a new branch for a feature, say branch-1, and switch to it:
+
+git branch branch-1
+
+git checkout branch-1
+
+Now, you can make changes, commit them, and push them to the remote repository when ready.
+
+
+## Git Merging
+
+When you finish working on a branch (like a feature branch), you can merge it back into another branch, usually the main/master branch. 
+
+Merging incorporates the changes from one branch into another.
+
+#### Key Merging Commands :-
+
+Merge a branch into the current branch
+
+git merge <branch-name>
+
+Merge commit : If there are changes in both branches (the source and target), Git creates a merge commit that combines the changes.
+
+
+#### Example of Merging
+
+
+Switch to the main/master branch (or whichever branch you want to merge into)
+
+git checkout main/master
+
+Merge the feature branch branch-1 into main/master
+
+git merge branch-1
+
+If there are no conflicts, Git will automatically merge the branches, and you will have a new commit on the main/master branch that includes the changes from branch-1.
+
+
+## Resolving Merge Conflicts
+
+
+A merge conflict occurs when Git cannot automatically merge changes because both branches have modified the same part of a file in conflicting ways.
+
+This usually happens when :-
+
+Two developers modify the same lines in a file in different branches.
+
+A file is deleted in one branch and modified in another.
+
+When this happens, Git will stop the merge process and mark the conflicted files. You will need to manually resolve the conflicts and then complete the merge.
+
+
+#### Steps for Resolving Merge Conflicts
+
+
+Identify Conflicted Files : After a git merge or git pull, if there are conflicts, Git will notify you with a message like:
+
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+You can also run :
+
+git status
+
+This will show a list of files that have conflicts, marked as unmerged.
+
+Open Conflicted Files : Conflicted files will have conflict markers in them, showing the conflicting changes from both branches. 
+
