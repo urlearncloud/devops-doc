@@ -164,11 +164,11 @@ Commit History : Each commit has a unique identifier (SHA hash) and contains a m
 
 Each commit includes :-
 
-    A commit message explaining the changes.
+A commit message explaining the changes.
     
-    A snapshot of the project at the time of the commit.
+A snapshot of the project at the time of the commit.
     
-    Metadata like the author and timestamp.
+Metadata like the author and timestamp.
     
 Example :-
 
