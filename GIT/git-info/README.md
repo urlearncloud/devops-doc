@@ -148,7 +148,7 @@ Example :-
 
 You modify style.css and script.js. To prepare these changes for the next commit, you run :
 
-`git add style.css script.js`
+git add style.css script.js
 
 These files are now in the staging area.
 
