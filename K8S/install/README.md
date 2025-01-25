@@ -4,38 +4,38 @@
 2. connect ubuntu sys ( instance )
 3. run below commands
    
-#### Update Ubuntu sys 
+#### 1. Update Ubuntu sys 
 
 `sudo apt update -y`
 
-#### Install Docker
+#### 2. Install Docker
 
 `sudo apt install docker.io -y`
 
-#### Install Minikube
+#### 3. Install Minikube
 
 [go to minikube & paste below curl command]----visit
 
 `curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64`
 
-#### To check minikube version
+#### 4. To check minikube version
 
 `minikube version`
 
-#### Allow permission for Docker
+#### 5. Allow permission for Docker
 
 sudo usermod -aG docker $USER && newgrp docker
 
-#### Start Minikube Service
+#### 6. Start Minikube Service
 
 `minikube start --driver=docker`
 
-#### Install Kubectl ( k8s-CLI )
+#### 7. Install Kubectl ( k8s-CLI )
 
 `sudo snap install kubectl --classic`
 
-#### To check all cluster info
+#### 8. To check all cluster info
 
 `kubectl get nodes`
 
